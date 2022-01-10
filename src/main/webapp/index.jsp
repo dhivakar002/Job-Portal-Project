@@ -137,7 +137,7 @@ hr.new2 {
 </style>
 </head>
 <body>
-<h1 style="background-color: black; font-size: 30px; color: DarkOrange; back" align="left" >JOB PORTAL &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<h1 style="background-color: black; font-size: 31px; color: DarkOrange; back" align="left" >JOB PORTAL &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="CompanyRegister.jsp" style="color: DarkOrange">Recruiter</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -207,7 +207,7 @@ hr.new2 {
 			Govt. Jobs-Teaching Jobs | Defence Jobs | Bank Jobs | Railway Jobs | UPSC Jobs | SSC Jobs | Law Jobs | Engineering Jobs | Post Graduate Jobs | Ph.D Jobs<br>
 			Career Services-Xpress Resume+ | Right Resume | Career Booster | Resume Highlighter<br>
 			All Jobs-Walkin Jobs | Contract Jobs | Placement Jobs | Jobs for Women | Startup Jobs | International Jobs</p>
-      
+      <br>
    <footer>
    <p style="text-align: center;background-color: #333;color: white;"><b>copyrights</b><br>
  <b>Email: info@JobPortal.com</b>  <br>
