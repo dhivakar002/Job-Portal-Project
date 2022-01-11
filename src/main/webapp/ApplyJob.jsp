@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+         <%@page import="com.JobPortal.Model.*"%>
+    <%@page import="com.JobPortal.DaoImpl.*"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +16,7 @@
 <form action="ApplyJobController" method="post" >
 <div class="form-box">
 <h1> Application Form</h1>
-<input type ="number" name = "postid" placeholder="Enter Job Post-Id" pattern = "[0-9]{4}" required><br><br>
+<input type ="number" name = "postid" value="<%=request.getParameter("postid")%>"><br><br>
 <input type ="text" name = "applicantname" placeholder = "Enter Your Name" pattern = "[A-Za-z ]{3,30}" autofocus required ><br><br>
 <input type ="text" name = "qualification" placeholder ="Enter Qualification" pattern = "[A-Za-z.,' ]{3,30}" required><br><br>
 <input type ="text" name = "skill" placeholder="Enter Your Skill" pattern = "[A-Za-z ]{3,30}" required><br><br>

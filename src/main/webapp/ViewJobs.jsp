@@ -8,6 +8,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>View Jobs</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <body>
@@ -18,8 +20,8 @@
 		%>
 		
 		
-		<table border="2" id="alljobs">
-			<h1><b>Job List</b></h1>
+		<table border="2" id="alljobs" class="table">
+			<h1 style="text-align: center"><b>Job List</b></h1>
 			<thead>
 				<tr>
 				<th>S.No</th>
@@ -47,14 +49,14 @@
 				%>
 				<tr>
 					<td><%=i%></td>
-					<td><%=list.getCompanyId()%></td>
-					<td><%=list.getPostId()%></td>
-					<td> <%=list.getJobTitle()%></td>	
-					<td><%=list.getIncome() %></td>	
-					<td><%=list.getService()%></td>	
-					<td><%=list.getCategories() %></td>			
-					<td> <%=list.getPostDate()%></td>
-					<td><a href="ApplyJob.jsp">Apply</a></td>
+					<td class ="table-danger"><%=list.getCompanyId()%></td>
+					<td class="table-primary"><%=list.getPostId()%></td>
+					<td class="table-info"> <%=list.getJobTitle()%></td>	
+					<td class="table-primary"><%=list.getIncome() %></td>	
+					<td class="table-warning"><%=list.getService()%></td>	
+					<td class="table-danger"><%=list.getCategories() %></td>			
+					<td class="warning"> <%=list.getPostDate()%></td>
+					<td><a href="ApplyJob.jsp?postid=<%=list.getPostId()%>"class="table-light">Apply</a></td>
 									
 			</tr>
 					

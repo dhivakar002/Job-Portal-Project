@@ -25,7 +25,7 @@
  <input type ="submit" style="background-color: red" value ="Login">
     <p class="backlink">Already have an account ?<a href="CompanyLogin.jsp">Login</a></p>
 </div>
-<!--  = "[a-zA-Z0-9@#]{5,8})" -->
+
 <p id="emailresponse"></p>
 </form>>
 <script>  

@@ -8,6 +8,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Applied Status</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <%		JobStatusDao status = new   JobStatusDao();
@@ -15,8 +17,8 @@
 		update=status.updateStatus();
 		%>
 		
-			<table border="2" id="alljobs">
-			<h1><b>Applicant Status</b></h1>
+			<table border="2" id="alljobs" class="table" >
+			<h1 style="text-align: center;"><b>Applicant Status</b></h1>
 			<thead>
 				<tr>
 				<th>S.No</th>
@@ -37,10 +39,10 @@
 						i++;
 										%>
 				<tr>
-					<td><%=i%></td>
-					<td><%=list.getPostID()%></td>
-					<td><%=list.getApplicantID()%></td>
-					<td> <%=list.getStatus()%></td>	
+					<td class ="table-danger"><%=i%></td>
+					<td class="table-primary"><%=list.getPostID()%></td>
+					<td class="table-secondary"><%=list.getApplicantID()%></td>
+					<td class="table-danger"> <%=list.getStatus()%></td>	
 					
 					
 									

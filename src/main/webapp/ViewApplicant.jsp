@@ -9,6 +9,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>View Applicant</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
 
@@ -25,7 +27,7 @@
 		%>
 		
 		
-		<table border="2" id="allapplicants" style="text-align: center" class="center" >
+		<table border="2" id="allapplicants" class="table" >
 			<h1 style="text-align: center"><b>Applicant List</b></h1>
 			<thead>
 				<tr>
@@ -55,17 +57,17 @@
 						
 				%>
 				<tr>
-					<td><%=i%></td>
-					<td><%=list.getPostId()%></td>
-					<td><%=list.getApplicantId()%></td>
-					<td> <%=list.getApplicantName()%></td>	
-					<td><%=list.getQualification() %></td>	
-					<td><%=list.getAge()%></td>	
-					<td><%=list.getEmail() %></td>			
-					<td> <%=list.getAddress()%></td>
-					<td> <%=list.getPhoneNumber()%></td>
-					<td><%=list.getSkill() %></td>
-					<td><%=list.getDate() %></td>
+					<td class="warning"><%=i%></td>
+					<td class ="table-danger"><%=list.getPostId()%></td>
+					<td class="table-primary"><%=list.getApplicantId()%></td>
+					<td class="table-info"> <%=list.getApplicantName()%></td>	
+					<td class="table-primary"><%=list.getQualification() %></td>	
+					<td class="table-warning"><%=list.getAge()%></td>	
+					<td class="table-active"><%=list.getEmail() %></td>			
+					<td class="table-primary"> <%=list.getAddress()%></td>
+					<td class="table-secondary"> <%=list.getPhoneNumber()%></td>
+					<td class="table-danger"><%=list.getSkill() %></td>
+					<td class="table-light"><%=list.getDate() %></td>
 									
 			</tr>
 					
