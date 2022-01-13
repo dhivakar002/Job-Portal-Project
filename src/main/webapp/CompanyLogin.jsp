@@ -11,10 +11,16 @@
  <form action="CompanyLoginController" method="POST">
         <div class="form-box">            
         <h1>Login Form</h1>
-        <input placeholder="Your MailId" type="email" name="email" pattern = "[a-z0-9]+[@][a-z]+[.][a-z]+{2,5}"  required>
-        <input placeholder="Your Password" type="password" name="password" pattern = "[a-zA-Z0-9@#]{5,8})" required >         
-       <input type ="submit" style="background-color: red" value ="Login" >
+        <input placeholder="Your MailId" type="email" name="email"  required ">
+        <input placeholder="Your Password" type="password" name="password"   required >
+             
+       <input type ="submit" style="background-color: red" value ="Login"  >
+       
+       <%
+       String email = request.getParameter("email");
+       System.out.println("email"); %>
     <p class="backlink">Don't have an account ?<a href="CompanyRegister.jsp">Register</a></p>
+    
          </div>
         </form>
 </body>

@@ -115,12 +115,44 @@ public class ApplyJob {
 			this.phoneNumber=phoneNumber;
 			this.date=date;
 	}
+	public ApplyJob(int postId, String applicantName, String qualification, String skill, int age, String email,
+			String password, String address, long phoneNumber, int applicantId, Date date) {
+		super();
+		this.postId = postId;
+		this.applicantName = applicantName;
+		this.qualification = qualification;
+		this.skill = skill;
+		this.age = age;
+		this.email = email;
+		this.password = password;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
+		this.applicantId = applicantId;
+		this.date = date;
+	}
 	@Override
 	public String toString() {
 		return "ApplyJob [postId=" + postId + ", applicantName=" + applicantName + ", qualification=" + qualification
 				+ ", skill=" + skill + ", age=" + age + ", email=" + email + ", password=" + password + ", address="
 				+ address + ", phoneNumber=" + phoneNumber + "]";
 	}
+	public ApplyJob(int postId,int applicantId, String applicantName, String qualification, int age, String email,
+			String address, long phoneNumber,String skill, Date date) {
+		super();
+		this.postId = postId;
+		this.applicantId = applicantId;
+
+		this.applicantName = applicantName;
+		this.qualification = qualification;
+		this.age = age;
+		this.email = email;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
+
+		this.skill = skill;
+		this.date = date;
+	}
+	
 	
 	
 	

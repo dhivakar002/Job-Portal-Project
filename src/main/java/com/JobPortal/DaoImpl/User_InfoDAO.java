@@ -40,18 +40,7 @@ public class User_InfoDAO implements UserInfoInterface {
 			
 		public boolean login(String emailId, String Password ) throws ClassNotFoundException, SQLException {
 				
-//			System.out.println("enter the username ");			
-//			String username = sc.nextLine();
-//				
-//			System.out.println("enter the password");
-//		    String passname = sc.nextLine();
-				
-		    User_Info str = new User_Info();
-		    
-		  //  str.setUsername(username);
-				
-		    //str.setPassword(passname);
-				
+
 		    Connection con = ConnectionUtil.getDBconnection();
 				
 		    String query = "select * from User_info where email_id= ? and password= ? ";
@@ -69,7 +58,7 @@ if(i>0)
 {
 				return true;
 
-				//System.out.println("welcome "+rs.getString("first_name") );
+				
 				}else {
 						return false;
 				}

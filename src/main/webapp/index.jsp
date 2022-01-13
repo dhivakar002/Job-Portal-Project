@@ -185,12 +185,12 @@ hr.new2 {
 <br>
 <div>
 					
-					<p style="font-size: 25px"><span style="color: DarkOrange">Job Seeker : </span>Technology has changed the way job seekers search for jobs and employers find qualified employees. 
+				<i>	<p style="font-size: 25px"><span style="color: DarkOrange">Job Seeker : </span>Technology has changed the way job seekers search for jobs and employers find qualified employees. 
 					While employers still advertise job openings through traditional advertising mediums, such as local newspapers and magazines,
 					 today employers and job seekers turn to online job portals to find employment matches. Job seekers can advertise their skills and search for available positions, 
 					 and employers can announce employment openings through job portals such as Monster, Career Builders and USA Jobs, for federal government positions.</p>
-				</div>
-
+				</i>
+</b>
 <h2 style="text-align: center;color:black;">
     Create economic opportunity for every member of the global workforce.
 </h2>
@@ -198,7 +198,7 @@ hr.new2 {
      successful.</h2>
      <hr class="new2">
      <p></p><h2 style="font-size:5vw;text-align: center;color:Indigo;);">About Us</h2><p></p>
-    <p style=" color:black ;">Jobs by Skill-Call Center Jobs | Mechanical Engineering Jobs | Biotechnology Jobs | Nursing Jobs | BPO Jobs | Networking Jobs | MBA Jobs | Java Jobs | SEO Jobs | SAP Jobs<br>
+  <b>  <p style=" color:black ;">Jobs by Skill-Call Center Jobs | Mechanical Engineering Jobs | Biotechnology Jobs | Nursing Jobs | BPO Jobs | Networking Jobs | MBA Jobs | Java Jobs | SEO Jobs | SAP Jobs<br>
 			Jobs by Location-Jobs in Delhi | Jobs in Bangalore | Jobs in Mumbai |  Jobs in Chennai | Jobs in Hyderabad | Jobs in Kolkata | Jobs in Pune | Jobs in Chandigarh | Jobs in Lucknow | Jobs in Coimbatore<br>
 			Jobs by Function-Banking Jobs | Biotech Jobs | Airlines Jobs | HR Jobs | Accounts Jobs | Supply Chain Jobs | Legal Jobs | Marketing Jobs | Telecom Jobs | Hotels Jobs<br>
 			Jobs by Industry-IT Jobs | Pharmaceuticals Jobs | Travel Jobs | Oil and Gas Jobs | FMCG Jobs | Construction Jobs | Chemicals Jobs | Media Jobs | Retailing Jobs | PR Jobs<br>
@@ -208,6 +208,7 @@ hr.new2 {
 			Career Services-Xpress Resume+ | Right Resume | Career Booster | Resume Highlighter<br>
 			All Jobs-Walkin Jobs | Contract Jobs | Placement Jobs | Jobs for Women | Startup Jobs | International Jobs</p>
       <br>
+      </b>
    <footer>
    <p style="text-align: center;background-color: #333;color: white;"><b>copyrights</b><br>
  <b>Email: info@JobPortal.com</b>  <br>
