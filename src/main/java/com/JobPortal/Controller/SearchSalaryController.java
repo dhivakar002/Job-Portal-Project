@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.JobPortal.DaoImpl.PostJobDao;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
 import com.JobPortal.Model.PostJobModel;
 
 @WebServlet("/SearchSalaryController")
@@ -43,7 +43,7 @@ public class SearchSalaryController extends HttpServlet {
 		
 		
 		
-	  PostJobDao search = new PostJobDao();
+	  PostJobDaoImpl search = new PostJobDaoImpl();
 	  
         List<PostJobModel> searchlist = search.SearchSal(Integer.parseInt(salary));
         

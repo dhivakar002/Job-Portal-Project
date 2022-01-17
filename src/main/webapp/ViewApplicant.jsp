@@ -21,10 +21,12 @@
 </style>
 <body>
 
-<%		ApplyJobDao showJob = new   ApplyJobDao();
+<%
+
+		ApplyJobDaoImpl showJob = new   ApplyJobDaoImpl();
 		List<ApplyJob> appliedList = new ArrayList<ApplyJob>();
 		appliedList=showJob.showApplicant();
-		%>
+%>
 		
 		
 		<table border="2" id="allapplicants" class="table" >

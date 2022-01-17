@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.JobPortal.DaoImpl.PostJobDao;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
 import com.JobPortal.Model.PostJobModel;
 
 @WebServlet("/SearchCompanyController")
@@ -42,7 +42,7 @@ public class SearchCompanyController extends HttpServlet {
 		String company = request.getParameter("company");
 		
 		System.out.println("kcfsbhjfvd");
-	  PostJobDao search = new PostJobDao();
+	  PostJobDaoImpl search = new PostJobDaoImpl();
 	  
         List<PostJobModel> searchlist = search.SearchCom(company);
         

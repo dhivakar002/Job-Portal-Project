@@ -10,10 +10,12 @@
 <title>Update Applied Status</title>
 </head>
 <body>
-<%		JobStatusDao status = new   JobStatusDao();
+<%
+
+		JobStatusDaoImpl status = new   JobStatusDaoImpl();
 		List<JobStatusModel> update = new ArrayList<JobStatusModel>();
 		update=status.updateStatus();
-		%>
+%>
 		
 			<table border="2" id="alljobs">
 			<h1><b>Applicant Status</b></h1>

@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.JobPortal.DaoImpl.CompanyProfileDao;
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.CompanyProfileDaoImpl;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.CompanyModel;
 import com.JobPortal.Model.PostJobModel;
 
@@ -39,7 +39,7 @@ public class CompanyLoginController extends HttpServlet {
 		String Password = request.getParameter("password");
 		System.out.println("snvdfcgscdcghcdgdccd");
 	
-		CompanyProfileDao cpDao = new CompanyProfileDao();
+		CompanyProfileDaoImpl cpDao = new CompanyProfileDaoImpl();
 		
 		try {
 			Boolean Str = cpDao.companyLogin(email, Password);

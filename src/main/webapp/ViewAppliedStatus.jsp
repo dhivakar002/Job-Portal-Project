@@ -12,10 +12,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<%		JobStatusDao status = new   JobStatusDao();
+<%
+
+		JobStatusDaoImpl status = new   JobStatusDaoImpl();
 		List<JobStatusModel> update = new ArrayList<JobStatusModel>();
 		update=status.updateStatus();
-		%>
+%>
 		
 			<table border="2" id="alljobs" class="table" >
 			<h1 style="text-align: center;"><b>Applicant Status</b></h1>

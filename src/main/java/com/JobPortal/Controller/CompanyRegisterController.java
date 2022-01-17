@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.CompanyProfileDao;
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.CompanyProfileDaoImpl;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.CompanyModel;
 import com.JobPortal.Model.User_Info;
 
@@ -48,7 +48,7 @@ public class CompanyRegisterController extends HttpServlet {
         
 			
           CompanyModel objcompanymodel = new CompanyModel(companyid,companyname,username,userrole,phonenumber,location,email, password);
-          CompanyProfileDao comDao = new CompanyProfileDao();
+          CompanyProfileDaoImpl comDao = new CompanyProfileDaoImpl();
 			comDao.insertCompanyProfile(objcompanymodel);
 			
 			   response.getWriter().print("Register Suceessfully");

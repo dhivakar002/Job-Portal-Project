@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.JobStatusDao;
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.JobStatusDaoImpl;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.JobStatusModel;
 import com.JobPortal.Model.User_Info;
 
@@ -44,7 +44,7 @@ public class UpdateApplicantStatus extends HttpServlet {
     
 		
       JobStatusModel objStatus = new JobStatusModel(postId,applicantId,Status);
-		JobStatusDao statusDao = new JobStatusDao();
+		JobStatusDaoImpl statusDao = new JobStatusDaoImpl();
 		statusDao.jobStatus(objStatus);
 		
 		   response.getWriter().print("Update Suceessfully");

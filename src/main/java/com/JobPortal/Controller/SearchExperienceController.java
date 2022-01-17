@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.JobPortal.DaoImpl.PostJobDao;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
 import com.JobPortal.Model.PostJobModel;
 
 @WebServlet("/SearchExperienceController")
@@ -35,7 +35,7 @@ public class SearchExperienceController extends HttpServlet {
 			String Experience = request.getParameter("experience");
 			
 			
-		  PostJobDao search = new PostJobDao();
+		  PostJobDaoImpl search = new PostJobDaoImpl();
 		  
             List<PostJobModel> searchlist = search.SearchExp(Experience);
             

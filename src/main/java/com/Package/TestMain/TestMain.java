@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.JobPortal.DaoImpl.ApplyJobDao;
-import com.JobPortal.DaoImpl.CompanyProfileDao;
-import com.JobPortal.DaoImpl.JobStatusDao;
-import com.JobPortal.DaoImpl.PostJobDao;
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.ApplyJobDaoImpl;
+import com.JobPortal.DaoImpl.CompanyProfileDaoImpl;
+import com.JobPortal.DaoImpl.JobStatusDaoImpl;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.ApplyJob;
 import com.JobPortal.Model.CompanyModel;
 import com.JobPortal.Model.JobStatusModel;
@@ -22,10 +22,10 @@ public class TestMain {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
-		ApplyJobDao obj4 = new ApplyJobDao();
-		PostJobDao obj3 = new PostJobDao();
-		CompanyProfileDao obj2 = new CompanyProfileDao();
-		JobStatusDao obj5 = new JobStatusDao();
+		ApplyJobDaoImpl obj4 = new ApplyJobDaoImpl();
+		PostJobDaoImpl obj3 = new PostJobDaoImpl();
+		CompanyProfileDaoImpl obj2 = new CompanyProfileDaoImpl();
+		JobStatusDaoImpl obj5 = new JobStatusDaoImpl();
 		
 		Scanner sc = new Scanner(System.in);
 		int n;
@@ -183,7 +183,7 @@ public class TestMain {
 			
 		case 2:
 			
-			CompanyProfileDao ob = new CompanyProfileDao();
+			CompanyProfileDaoImpl ob = new CompanyProfileDaoImpl();
 			ob.companyLogin();
 			
 			System.out.println("1).Update Company Profile 2).Post Job 3).View Applicants 4) Insert Application Status 5).Update Applicant Status 6).Delete Post Job with applicant status 7).Update Post Jobs");
@@ -569,7 +569,7 @@ public class TestMain {
 					} while(flag12);
 				
 				JobStatusModel pc1 = new JobStatusModel( postId1,applicantId2 ,statuss);
-				JobStatusDao obj8 = new JobStatusDao();
+				JobStatusDaoImpl obj8 = new JobStatusDaoImpl();
 				obj8.updateJobStatusDao(pc1);
 				break;
 			
@@ -800,14 +800,14 @@ public class TestMain {
 				} while(flag);
 
 			User_Info str = new User_Info(firstName, lastName,userName,gender, email_id,  password, phoneNumber);
-		User_InfoDAO obj = new User_InfoDAO();
+		User_InfoDAOImpl obj = new User_InfoDAOImpl();
 		obj.insert(str);
 		
 		
 		case 4://Candidate Login
 	  
 	   
-		User_InfoDAO obj1 = new User_InfoDAO();
+		User_InfoDAOImpl obj1 = new User_InfoDAOImpl();
 		obj1.login();
 		
 		System.out.println(" 1).view Post Job 2).Apply Job 3).View Applied Job Status 4).Search By Salary 5).Search By Experience 6).Search By Location 7).Search By Company");

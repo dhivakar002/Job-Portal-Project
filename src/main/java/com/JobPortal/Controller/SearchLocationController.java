@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.JobPortal.DaoImpl.PostJobDao;
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.PostJobModel;
 import com.JobPortal.Model.User_Info;
 
@@ -50,7 +50,7 @@ public class SearchLocationController extends HttpServlet {
 			String Location = request.getParameter("location");
 			System.out.println(Location);
 			
-		  PostJobDao search = new PostJobDao();
+		  PostJobDaoImpl search = new PostJobDaoImpl();
 		  
             List<PostJobModel> searchlist = search.SearchJobs(Location);
             

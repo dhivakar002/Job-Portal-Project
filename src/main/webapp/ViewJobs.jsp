@@ -14,10 +14,12 @@
 <body>
 <body>
 
-<%		PostJobDao showJob = new   PostJobDao();
+<%
+
+		PostJobDaoImpl showJob = new   PostJobDaoImpl();
 		List<PostJobModel> jobList = new ArrayList<PostJobModel>();
 		jobList=showJob.showJobs();
-		%>
+%>
 		
 		
 		<table border="2" id="alljobs" class="table">

@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.ApplyJobDao;
-import com.JobPortal.DaoImpl.PostJobDao;
+import com.JobPortal.DaoImpl.ApplyJobDaoImpl;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
 import com.JobPortal.Model.ApplyJob;
 import com.JobPortal.Model.PostJobModel;
 
@@ -47,7 +47,7 @@ public class ApplyJobController extends HttpServlet {
         
 			ApplyJob objapply = new ApplyJob(postId,ApplicantName,Qualification,Skills,age,Email,Passsword,location,phonenumber);
          
-          ApplyJobDao applyDao = new ApplyJobDao();
+          ApplyJobDaoImpl applyDao = new ApplyJobDaoImpl();
           applyDao.applyJob(objapply);
 			
 			   response.getWriter().print("Apply Job Suceessfully");

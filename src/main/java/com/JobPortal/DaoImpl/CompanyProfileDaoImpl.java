@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 
 
-public class CompanyProfileDao implements CompanyProfileInterface {
+public class CompanyProfileDaoImpl implements CompanyProfileInterface {
 
 	Scanner sc = new Scanner(System.in);
 	

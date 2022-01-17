@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.User_Info;
 
 /**
@@ -59,7 +59,7 @@ public class UserRegisterController extends HttpServlet {
 	        
 				
 	          User_Info objUserInfo = new User_Info(firstname,lastname,username,gender,mailid,password, phonenumber);
-				User_InfoDAO RegDao = new User_InfoDAO();
+				User_InfoDAOImpl RegDao = new User_InfoDAOImpl();
 				RegDao.insert(objUserInfo);
 				
 				   response.getWriter().print("Register Suceessfully");

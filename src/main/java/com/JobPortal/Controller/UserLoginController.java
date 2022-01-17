@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.User_InfoDAO;
+import com.JobPortal.DaoImpl.User_InfoDAOImpl;
 import com.JobPortal.Model.User_Info;
 
 /**
@@ -44,7 +44,7 @@ public class UserLoginController extends HttpServlet {
 		String emailId = request.getParameter("emailId");
 		String Password = request.getParameter("password");
 		
-		User_InfoDAO user =new User_InfoDAO();
+		User_InfoDAOImpl user =new User_InfoDAOImpl();
 		
 		try {
 			Boolean Str = user.login(emailId, Password);

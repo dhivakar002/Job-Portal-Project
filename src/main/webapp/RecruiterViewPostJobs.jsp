@@ -5,8 +5,8 @@
          <%@page import="com.JobPortal.Model.CompanyModel"%>
          <%@page import="com.JobPortal.Model.PostJobModel"%>
     
-    <%@page import="com.JobPortal.DaoImpl.CompanyProfileDao"%>
-        <%@page import="com.JobPortal.DaoImpl.PostJobDao"%>
+    <%@page import="com.JobPortal.DaoImpl.CompanyProfileDaoImpl"%>
+        <%@page import="com.JobPortal.DaoImpl.PostJobDaoImpl"%>
     
 <!DOCTYPE html>
 <html>
@@ -45,9 +45,11 @@ table.center {
 
 <body>
 <%
+
+
 String email  =  (String)session.getAttribute("Email");
 System.out.println(email);
-CompanyProfileDao comDao=new CompanyProfileDao();
+CompanyProfileDaoImpl comDao=new CompanyProfileDaoImpl();
 int companyId=comDao.getEmployee(email);
 
 System.out.println(companyId);
@@ -56,11 +58,11 @@ System.out.println(companyId);
 <div class="back">
 	
 
- 	<%	
- 	PostJobDao showJob = new   PostJobDao();
-		List<PostJobModel> jobList = new ArrayList<PostJobModel>();
-		jobList=showJob.showJobs();
-		%> 
+ 	<%
+	 	PostJobDaoImpl showJob = new   PostJobDaoImpl();
+	 			List<PostJobModel> jobList = new ArrayList<PostJobModel>();
+	 			jobList=showJob.showJobs();
+	 	%> 
 			<%-- <% CompanyModel user=(CompanyModel)session.getAttribute("PostJobModel"); %> --%>
 		<table border="2" id="alljobs" style="margin-right: 70px;"  class="table">
 			<h1 align="center" style="margin-right: 100px;"><b>Job List</b></h1>

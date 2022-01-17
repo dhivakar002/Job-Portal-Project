@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.CompanyProfileDao;
-import com.JobPortal.DaoImpl.PostJobDao;
+import com.JobPortal.DaoImpl.CompanyProfileDaoImpl;
+import com.JobPortal.DaoImpl.PostJobDaoImpl;
 import com.JobPortal.Model.CompanyModel;
 import com.JobPortal.Model.PostJobModel;
 
@@ -49,7 +49,7 @@ public class PostJobController extends HttpServlet {
 			Date postDate = null;
 			PostJobModel objpost = new PostJobModel(companyid,postId,JobTitle,salary,EnterExperience,JobCategory,postDate);
          
-          PostJobDao postDao = new PostJobDao();
+          PostJobDaoImpl postDao = new PostJobDaoImpl();
           postDao.postJobs(objpost);
 			
 			   response.getWriter().print("Post Job Suceessfully");

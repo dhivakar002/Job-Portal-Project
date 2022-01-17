@@ -14,7 +14,7 @@ import com.JobPortal.Model.PostJobModel;
 
 
 
-public class JobStatusDao implements JobStatusInterface {
+public class JobStatusDaoImpl implements JobStatusInterface {
 	
 	public void jobStatus(JobStatusModel pc) throws ClassNotFoundException, SQLException {
 		

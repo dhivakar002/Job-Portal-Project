@@ -122,6 +122,7 @@ body {
 }
 hr.new2 {
   border-top: 1px dashed #333;
+  
 }
 
 
@@ -176,7 +177,7 @@ hr.new2 {
     <span class="dot" onclick="currentSlide(3)"></span> 
   </div>
 <br>
-<br>
+<br><br><br>
 <div style="text-align: center;">
 <table style="width: 100%;">
     <tbody><tr>
@@ -194,13 +195,13 @@ hr.new2 {
       <td><a href="salary.jsp"><b>By Salary</b></a></td>
     </tr>
     </tbody></table>
-</div>
-
+</div><br>
+<br>
 <h2 style="text-align: center;color: black;">
     Create economic opportunity for every member of the global workforce.
 </h2>
 <h2 style="text-align: center;color: black;">The mission is simple connect the world's professionals to make them more productive and
-     successful.</h2>
+     successful.</h2><br><br>
      <hr class="new2">
      <p></p><h2 style="font-size:5vw;text-align: center;color:rgb(34, 4, 143);">About Us</h2><p></p>
     <p>Jobs by Skill-Call Center Jobs | Mechanical Engineering Jobs | Biotechnology Jobs | Nursing Jobs | BPO Jobs | Networking Jobs | MBA Jobs | Java Jobs | SEO Jobs | SAP Jobs<br>
@@ -213,7 +214,7 @@ hr.new2 {
 			Career Services-Xpress Resume+ | Right Resume | Career Booster | Resume Highlighter<br>
 			All Jobs-Walkin Jobs | Contract Jobs | Placement Jobs | Jobs for Women | Startup Jobs | International Jobs</p>
       
-   <footer>
+   <footer><br>
    <p style="text-align: center;background-color: #333;color: white;"><b>copyrights</b><br>
  <b>Email: info@JobPortal.com</b>  <br>
   <b> Phone_No: +91-40-66116611</b></p>

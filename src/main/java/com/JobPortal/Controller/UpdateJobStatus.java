@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.JobPortal.DaoImpl.JobStatusDao;
+import com.JobPortal.DaoImpl.JobStatusDaoImpl;
 import com.JobPortal.Model.JobStatusModel;
 
 @WebServlet("/UpdateJobStatus")
@@ -38,7 +38,7 @@ public class UpdateJobStatus extends HttpServlet {
 	    
 			
 	      JobStatusModel objStatus = new JobStatusModel(postId,applicantId,Status);
-			JobStatusDao statusDao = new JobStatusDao();
+			JobStatusDaoImpl statusDao = new JobStatusDaoImpl();
 			statusDao.updateJobStatusDao(objStatus);
 			
 			   response.getWriter().print("Update Suceessfully");

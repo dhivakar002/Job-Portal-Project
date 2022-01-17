@@ -15,7 +15,7 @@ import com.JobPortal.Model.ApplyJob;
 
 
 
-public class ApplyJobDao implements ApplyJobInterface{
+public class ApplyJobDaoImpl implements ApplyJobInterface{
 
 	public void applyJob(ApplyJob str3) throws ClassNotFoundException, SQLException {
 		

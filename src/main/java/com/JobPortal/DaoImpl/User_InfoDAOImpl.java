@@ -12,7 +12,7 @@ import com.JobPortal.Model.User_Info;
 import oracle.jdbc.internal.OracleResultSet;
 
 
-public class User_InfoDAO implements UserInfoInterface {
+public class User_InfoDAOImpl implements UserInfoInterface {
 
 		Scanner sc = new Scanner(System.in);
 		

@@ -15,7 +15,7 @@ import com.JobPortal.Model.ApplyJob;
 import com.JobPortal.Model.PostJobModel;
 
 
-public class PostJobDao implements PostJobInterface {
+public class PostJobDaoImpl implements PostJobInterface {
 	
 Scanner sc = new Scanner(System.in);
 	

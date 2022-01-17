@@ -17,16 +17,18 @@ table.center {
 }
 </style>
 <body>
-<%		PostJobDao search = new   PostJobDao();
+<%
+
+		PostJobDaoImpl search = new   PostJobDaoImpl();
 		List<PostJobModel> searchList =(List<PostJobModel>) session.getAttribute("Location");
 		
 		for(int i=0; i<searchList.size();i++){
-			 System.out.println(searchList.get(i));
-			PostJobModel searchs = searchList.get(i);
-			
+	 System.out.println(searchList.get(i));
+	PostJobModel searchs = searchList.get(i);
+	
 		     searchList=search.SearchJobs(searchs.getLocation());
 		     System.out.println("flocation: "+searchs.getLocation());
-		%>
+%>
 		
 			<table border="2" id="alljobs" style="margin-right: 70px;" class = "center">
 			<h1 align="center" style="margin-right: 50px;"><b>Search By Location List:</b></h1>
