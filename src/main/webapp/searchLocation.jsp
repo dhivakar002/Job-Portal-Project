@@ -9,12 +9,26 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Jobs By Cities</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
 table.center {
   margin-left: 350px; 
   margin-right: auto;
 }
+.button {
+  border: none;
+  color: black;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: lightblue;}
 </style>
 <body>
 <%
@@ -30,8 +44,8 @@ table.center {
 		     System.out.println("flocation: "+searchs.getLocation());
 %>
 		
-			<table border="2" id="alljobs" style="margin-right: 70px;" class = "center">
-			<h1 align="center" style="margin-right: 50px;"><b>Search By Location List:</b></h1>
+			<table border="2" id="alljobs" class="table" >
+			<h1 align="center"><b>Search By Location List:</b></h1>
 			<thead>
 				<tr>
 				<th>S.No</th>
@@ -57,15 +71,15 @@ table.center {
 						System.out.println(list);
 										%>
 				<tr>
-					<td><%=i%></td>
-					<td><%=list.getCompanyId()%></td>
-					<td><%=list.getCompanyName()%></td>
-					<td> <%=list.getPostId()%></td>	
-					<td> <%=list.getIncome()%></td>	
-					<td> <%=list.getJobTitle()%></td>										
-					<td> <%=list.getLocation()%></td>
+					<td class="warning"><%=i%></td>
+					<td class ="table-danger"><%=list.getCompanyId()%></td>
+					<td class="table-primary"><%=list.getCompanyName()%></td>
+					<td class="table-info"> <%=list.getPostId()%></td>	
+					<td class="table-warning"> <%=list.getIncome()%></td>	
+					<td class="table-active"> <%=list.getJobTitle()%></td>										
+					<td class="table-secondary"> <%=list.getLocation()%></td>
 					<td> <%=list.getService()%></td>
-					<td><a href="ApplyJob.jsp">Apply</a></td>
+					<td class="table-light"><a href="ApplyJob.jsp">Apply</a></td>
 					
 													
 			</tr>
@@ -75,5 +89,6 @@ table.center {
 				%>
 					</tbody>
 		           </table>
+		            <a href="ApplicantHomePage.jsp" ><button class="button button1" style="margin-left: 650px">Back</button></a>
 </body>
 </html>

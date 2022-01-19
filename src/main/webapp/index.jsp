@@ -54,15 +54,9 @@
 <p style="size: 25px;text-align: center;color:black ;font-size: 20px">This is one of the fastest growing networks. Hire skilled people or get hired by the top companies. </p>
 <div class="slideshow-container">
 
-    
-
-    
-  
-     
       <img src="Assets/3.jpg" style="width: 70%;margin-left: 200px">
    
   
-    
   <br>
   
 
@@ -98,11 +92,6 @@
  <b>Email: info@JobPortal.com</b>  <br>
   <b> Phone_No: +91-40-66116611</b></p>
    </footer>
-
- 
-
-
-
 
 </body>
 </html>

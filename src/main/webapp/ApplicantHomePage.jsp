@@ -22,104 +22,12 @@ body {
   padding: 14px 25px;
   text-decoration: none;
   width: 25%;
-  
-}
+ }
 
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: 102px;
-  padding: 16px;
-  color:white ;  
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 50%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 hr.new2 {
   border-top: 1px dashed #333;
   
@@ -131,51 +39,19 @@ hr.new2 {
 <body>
 
 <div class="navbar" >
-   <a style="color: DarkOrange;font-size: 20px;" href="index.jsp">Home</a>
-  <a style="color: DarkOrange;font-size: 20px;"  href="ApplyJob.jsp">ApplyJob</a>
-  <a style="color: DarkOrange;font-size: 20px;" href="ViewJobs.jsp">ViewJobs</a>
-  <a style="color: DarkOrange;font-size: 20px;" href="ViewAppliedStatus.jsp">View Applied Status</a>
+   <a style="color: white;font-size: 20px;" href="index.jsp">Home</a>
+  <a style="color: white;font-size: 20px;"  href="ApplyJob.jsp">ApplyJob</a>
+  <a style="color: white;font-size: 20px;" href="ViewJobs.jsp">ViewJobs</a>
+  <a style="color: white;font-size: 20px;" href="ViewAppliedStatus.jsp">View Applied Status</a>
  
 </div>
 <br>
 
 <h1 style="font-size: 30px;text-align: center;color:DarkOrange  ;">Welcome to Profesional Community</h1>
 <p style="font-size: 20px;text-align: center;">This is one of the fastest growing networks. Hire skilled people or get hired by the top companies. </p>
-<div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
 
-    
-    <div class="mySlides fade" style="display: none;">
-      <div class="numbertext"></div>
-      <img src="Assets/6.jpg" style="width:100%;height: 430px;">
-      <div class="text"></div>
-    </div>
-  
-    <div class="mySlides fade" style="display: none;">
-      <div class="numbertext"></div>
-      <img src="Assets/7.jpg" style="width:100%">
-      <div class="text"></div>
-    </div>
-  
-    <div class="mySlides fade" style="display: block;">
-      <div class="numbertext"></div>
-      <img src="Assets/pexels-elevate-1267338.jpg" style="width:100%;height: 430px;">
-      <div class="text"></div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)"></a>
-    <a class="next" onclick="plusSlides(1)"></a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+     <img src="Assets/3.jpg" style="width: 70%;margin-left: 200px">
 <br>
 <br><br><br>
 <div style="text-align: center;">

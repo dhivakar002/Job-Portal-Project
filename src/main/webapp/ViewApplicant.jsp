@@ -18,6 +18,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+.button {
+  border: none;
+  color: black;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: lightblue;}
 </style>
 <body>
 
@@ -78,6 +90,6 @@
 				%>
 					</tbody>
 		           </table>
-
+<a href="Recruiter.jsp" ><button class="button button1" style="margin-left: 650px">Back</button></a>
 </body>
 </html>

@@ -41,6 +41,18 @@ table.center {
   margin-left: 300px; 
   margin-right: auto;
 }
+.button {
+  border: none;
+  color: black;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: lightblue;}
 </style>
 
 <body>
@@ -65,7 +77,7 @@ System.out.println(companyId);
 	 	%> 
 			<%-- <% CompanyModel user=(CompanyModel)session.getAttribute("PostJobModel"); %> --%>
 		<table border="2" id="alljobs" style="margin-right: 70px;"  class="table">
-			<h1 align="center" style="margin-right: 100px;"><b>Job List</b></h1>
+			<h1 align="center"><b>Job List</b></h1>
 			<thead>
 				<tr>	
 				<th>S.No</th>
@@ -111,13 +123,16 @@ System.out.println(companyId);
 						
 <%} %>				
 					</tbody>
+					
 		           </table>
+		          <a href="Recruiter.jsp" ><button class="button button1" style="margin-left: 650px">Back</button></a>
 		          
 		           <% int postId=Integer.parseInt(request.getParameter("postId"));
 		           showJob.deletePostJob(postId);
 		           %> 
 		           
 		            </div>
+
            
 </body>
 </html>
