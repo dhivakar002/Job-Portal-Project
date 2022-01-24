@@ -9,24 +9,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-  overflow: hidden;
+.topnav {
   background-color: #333;
+  overflow: hidden;
 }
 
-.navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-  font-size: 16px;
-  color: white;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  padding: 14px 25px;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
   width: 25%;
- }
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}
 
 
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
 * {box-sizing:border-box}
-
 
 hr.new2 {
   border-top: 1px dashed #333;
@@ -38,12 +52,14 @@ hr.new2 {
 </head>
 <body>
 
-<div class="navbar" >
+<div class="topnav" id="myTopnav" >
    <a style="color: white;font-size: 20px;" href="index.jsp">Home</a>
   <a style="color: white;font-size: 20px;"  href="ApplyJob.jsp">ApplyJob</a>
   <a style="color: white;font-size: 20px;" href="ViewJobs.jsp">ViewJobs</a>
   <a style="color: white;font-size: 20px;" href="ViewAppliedStatus.jsp">View Applied Status</a>
  
+ 
+  </a>
 </div>
 <br>
 
@@ -98,21 +114,6 @@ hr.new2 {
 
  
 
-<script>
-    var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 
 </script>
 </body></html>

@@ -26,7 +26,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: orange;
   color: black;
 }
 
@@ -55,9 +55,7 @@ hr.new2 {
   <a style="color: White;font-size: 20px;" href="AppliedJobStatus.jsp">View Status</a>
   <a style="color: White;font-size: 20px;" href="RecruiterViewPostJobs.jsp?postId=0">View Post Jobs</a>
   
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+ 
 </div>
 <br>
 
